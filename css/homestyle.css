@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400&family=Libre+Baskerville:wght@400;700&family=Lobster&family=Montserrat:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap");
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  color: #1c1d1f;
+  min-height: 100vh;
+}
+* a {
+  text-decoration: none;
+}
+
+/* --------- NAV BAR -------- */
+.nav-container {
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  max-height: 100px;
+  overflow: scroll;
+}
+.full_nav {
+  margin: 0 auto;
+  width: 98%;
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px;
+}
+.logo {
+  display: inline-block;
+  max-width: 100px;
+}
+.logo > img {
+  max-width: 8%;
+  min-width: 100px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.icons-n-btns {
+  padding-left: 0;
+  list-style: none;
+  gap: 8px;
+  align-items: center;
+}
+.nav-link {
+  color: #000;
+  font-size: 0.875rem;
+}
+.nav-link:hover {
+  color: #8600e0;
+}
+.nav_btns,
+.languages-btn,
+.courses_btn {
+  border: 1px solid #000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 10px 16px;
+}
+.languages-btn {
+  padding: 3px 6px;
+}
+.logIn-btn,
+.languages-btn,
+.courses_btn {
+  background-color: #fff;
+  color: #000;
+}
+.signUp-btn {
+  color: #fff;
+  background-color: #000;
+}
+.logIn-btn:hover,
+.languages-btn:hover,
+.courses_btn:hover {
+  background: #f7f9fa;
+}
+.cart-link {
+  padding: 10px;
+}
+/* ----first tooltip---- */
+.first_tooltip_main {
+  position: relative;
+  display: inline-block;
+}
+.first_tooltip_main .first_tooltiptext {
+  display: none;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute; /* Position the tooltip */
+  z-index: 1;
+  top: 250%;
+  left: 70%;
+  margin-left: -60px;
+}
+.first_tooltip_main:hover .first_tooltiptext {
+  display: inline-block;
+}
+
+/* two right toolitps */
+.right_tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.right_tooltip .r_tooltiptext {
+  display: none;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 250%;
+  right: 50%;
+  margin-right: -60px;
+}
+.right_tooltip:hover .r_tooltiptext {
+  display: inline-block;
+}
+/* //////////////// */
+
+/* ----Search Input--- */
+.input-control {
+  flex-grow: 1;
+  border: 1px solid #000;
+  height: 50px;
+  border-radius: 30px;
+  max-width: 550px;
+  background: #f7f9fa;
+  padding-left: 10px;
+}
+.input-control > input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.grey_icon {
+  color: gray;
+}
+/* --------- HERO SECTION ---------*/
+.hero {
+  background-color: #f7f9fa;
+  background: url(../images/landing_section_background.jpeg);
+  background-size: 100% cover;
+  height: 60vh;
+  margin: 0 16px;
+}
+.container {
+  border: none;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+.content-header {
+  background: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  max-width: 35%;
+  font-family: "Libre Baskerville", serif;
+  padding: 10px 18px;
+  margin: 0 0 0 10px;
+}
+.hero_h1 {
+  font-size: 2rem;
+}
+.hero_h2 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+/* ------- section one ----- */
+.heading {
+  font-family: "Libre Baskerville", serif;
+  width: 75%;
+}
+.courses_h2 {
+  font-size: 1.875rem;
+  margin-top: 0;
+}
+.courses_h3 {
+  font-weight: 100;
+}
+.sub_h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0;
+}
+.sub_h4 {
+  font-weight: 400;
+  margin-top: 8px;
+}
+.heading2 {
+  width: 65%;
+}
+.cards_in_slide {
+  border: 1px solid #d1d7dc;
+  margin-top: 18px;
+  padding-left: 32px;
+}
+.courses_tabs {
+  display: flex;
+  gap: 20px;
+}
+a.tab_links {
+  color: #6a6f73;
+  font-weight: 700;
+}
+a.tab_links:hover {
+  color: #000;
+}
+.cards_wrap {
+      margin-top: 20px;
+}
