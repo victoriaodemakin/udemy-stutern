@@ -164,7 +164,7 @@ body {
 /* --------- HERO SECTION ---------*/
 .hero {
   background-color: #f7f9fa;
-  background: url(/images/hero-background.jpg);
+  background: url(./images/hero-background.jpg);
   background-size: 100% cover;
   height: 60vh;
   margin: 0 16px;
