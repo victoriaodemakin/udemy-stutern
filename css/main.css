@@ -6,12 +6,14 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-  margin: 0;
+
   font-family: "Roboto", sans-serif, Arial, Helvetica;
   color: #1c1d1f;
-  min-height: 100vh;
+ 
 }
 * a {
   text-decoration: none;
@@ -25,7 +27,7 @@ body {
   max-height: 100px;
   overflow: scroll;
 }
-.full_nav {
+.full-nav {
   margin: 0 auto;
   width: 98%;
   background: transparent;
@@ -62,9 +64,9 @@ body {
 .nav-link:hover {
   color: #8600e0;
 }
-.nav_btns,
+.nav-btns,
 .languages-btn,
-.courses_btn {
+.courses-btn {
   border: 1px solid #000;
   font-size: 0.875rem;
   font-weight: 700;
@@ -75,7 +77,7 @@ body {
 }
 .logIn-btn,
 .languages-btn,
-.courses_btn {
+.courses-btn {
   background-color: #fff;
   color: #000;
 }
@@ -85,18 +87,18 @@ body {
 }
 .logIn-btn:hover,
 .languages-btn:hover,
-.courses_btn:hover {
+.courses-btn:hover {
   background: #f7f9fa;
 }
 .cart-link {
   padding: 10px;
 }
 /* ----first tooltip---- */
-.first_tooltip_main {
+.first-tooltip-main {
   position: relative;
   display: inline-block;
 }
-.first_tooltip_main .first_tooltiptext {
+.first-tooltip-main .first-tooltiptext {
   display: none;
   width: 200px;
   background-color: black;
@@ -110,17 +112,17 @@ body {
   left: 70%;
   margin-left: -60px;
 }
-.first_tooltip_main:hover .first_tooltiptext {
+.first-tooltip-main:hover .first-tooltiptext {
   display: inline-block;
 }
 
 /* two right toolitps */
-.right_tooltip {
+.right-tooltip {
   position: relative;
   display: inline-block;
 }
 
-.right_tooltip .r_tooltiptext {
+.right-tooltip .r-tooltiptext {
   display: none;
   width: 120px;
   background-color: black;
@@ -134,7 +136,7 @@ body {
   right: 50%;
   margin-right: -60px;
 }
-.right_tooltip:hover .r_tooltiptext {
+.right-tooltip:hover .r-tooltiptext {
   display: inline-block;
 }
 /* //////////////// */
@@ -156,13 +158,13 @@ body {
   outline: none;
   background: transparent;
 }
-.grey_icon {
+.grey-icon {
   color: gray;
 }
 /* --------- HERO SECTION ---------*/
 .hero {
   background-color: #f7f9fa;
-  background: url(../images/landing_section_background.jpeg);
+  background: url(/images/hero-background.jpg);
   background-size: 100% cover;
   height: 60vh;
   margin: 0 16px;
@@ -181,10 +183,10 @@ body {
   padding: 10px 18px;
   margin: 0 0 0 10px;
 }
-.hero_h1 {
+.hero-h1 {
   font-size: 2rem;
 }
-.hero_h2 {
+.hero-h2 {
   font-size: 1rem;
   font-weight: 200;
 }
@@ -194,40 +196,194 @@ body {
   font-family: "Libre Baskerville", serif;
   width: 75%;
 }
-.courses_h2 {
+.courses-h2 {
   font-size: 1.875rem;
-  margin-top: 0;
+  margin-bottom: 0.6em;
 }
-.courses_h3 {
+.courses-h3 {
   font-weight: 100;
+  margin-bottom: 0.6em;
 }
-.sub_h3 {
+.sub-h3 {
   font-size: 1.45rem;
-  margin-bottom: 0;
+  margin-top: 1em;
+  padding-left: 2em;
 }
-.sub_h4 {
+.sub-h4 {
   font-weight: 400;
-  margin-top: 8px;
+  margin-top: 0.7em;
+  padding: 0 2.5em;
+  line-height: 1.8em;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+.heading2 .courses-btn {
+  border: 1px solid #000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 10px 16px;
+  margin-left: 3em;
 }
 .heading2 {
   width: 65%;
+  margin: 3em 0;
 }
-.cards_in_slide {
+.cards-in-slide {
   border: 1px solid #d1d7dc;
-  margin-top: 18px;
-  padding-left: 32px;
+  margin-top: 2em;
 }
-.courses_tabs {
+.courses-tabs {
   display: flex;
   gap: 20px;
 }
-a.tab_links {
+a.links {
   color: #6a6f73;
   font-weight: 700;
 }
-a.tab_links:hover {
+a.links:hover {
   color: #000;
 }
-.cards_wrap {
-      margin-top: 20px;
+.cards-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2em;
+  margin-bottom: 2em;
 }
+ .cards-wrap h3 {
+  text-transform: capitalize;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.cards-wrap p {
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #6c6a73;
+}
+.card-currency p {
+  font-size: 1em;
+  color: black;
+}
+.card-currency span {
+  font-size: 0.8em;
+  color: #6a6f73;
+  text-decoration: line-through;
+}
+.star-rating {
+  display: flex;
+  flex-direction: row;
+}
+.checked {
+  color: orange;
+} 
+.mid-courses{
+margin: 2em 0 4em 0;
+background-color: #f7f9fa;
+padding: 2em 0;
+}
+.courses-demand{
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+
+}
+.courses-demand p{
+  font-size: .8em;
+  color: black;
+  font-weight: 700;
+}
+.course-cards-two h2{
+  padding-left: 1em;
+  margin: 2em 0 1em 0;
+}
+.other-categories{
+  margin: 3em 0;
+  padding: 0 1.5em;
+}
+.other-categories h3 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: 700;
+}
+.other-card-categories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+.card-categories{
+  /* Add shadows to create the "card" effect */
+  
+  margin:1em ;
+}
+
+/* On mouse-over, add a deeper shadow */
+
+
+/* Add some padding inside the card container */
+.card-container h4 {
+  font-size: 1em;
+  text-align: left;
+  line-height: 2em;
+  padding-left: 1em;
+ 
+}
+.instructor{
+  margin: 4em 0;
+  padding: 0 7em;
+}
+.instructor-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 6em;
+}
+.instructor-container h3{
+  font-size: 1.8em;
+  text-align: left;
+  padding:0 3.4em;
+}
+.instructor-container p{
+  font-size: 1em;
+  text-align: left;
+  padding: 1em 6em;
+  line-height: 1.5em;
+}
+.category-btn{
+  border: 1px solid #000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 10px 16px;
+  margin-left: 7em;
+  background-color: #000;
+  color: white;
+}
+.featured{
+  background-color: #f7f9fa;
+ padding: 3em 0em;
+
+  
+  
+}
+/* .featured h3{
+  font-size: 1.4em;
+  text-align: left;
+  margin: 1em 0;
+}
+.category-course{
+  display: flex;
+  flex-direction: row;
+}
+.category-course h3{
+  font-size: 1em;
+  text-align: left;
+}
+
+.link{
+  display: flex;
+  flex-direction: column;
+  
+  margin: 1em 0;
+  
+  
+} */
