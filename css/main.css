@@ -163,8 +163,8 @@ body {
 }
 /* --------- HERO SECTION ---------*/
 .hero {
-  background-color: #f7f9fa;
-  background: url(../images/landing_section_background.jpeg);
+  background-color: #000;
+  background: url(./images/landing_section_background.jpeg);
   background-size: 100% cover;
   height: 60vh;
   margin: 0 16px;
